@@ -13,14 +13,25 @@
         display: flex;
         flex-wrap: wrap;
         height: 100%;
+        perspective: 500px;
       }
 
       .button {
         flex: 0 0 33%;
         height: 33%;
+        transition: transform 0.5s;
+        transform: rotateY(0) rotateX(0);
+        color: white;
       }
       .active {
+        font-size: 24;
+        color: black;
         background-color: magenta;
+        /* Add the animation */
+        transition: transform 0.5s;
+        transform: rotateY(180deg) rotateX(180deg);
+      }
+      .inactive {
       }
     </style>
   </head>
